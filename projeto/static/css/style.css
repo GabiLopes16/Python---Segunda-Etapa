@@ -1,0 +1,93 @@
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body { 
+    background-color: #f4f7f6; 
+    color: #252424; 
+    display: flex; /* Mantém o menu e o conteúdo lado a lado */
+    min-height: 100vh; 
+}
+
+/* 2. MENU LATERAL (CORRIGIDO) */
+.menu {
+    width: 200px;
+    background-color: #460f85;
+    padding: 20px;
+    height: 100vh;
+    position: fixed; /* Fixa o menu na lateral esquerda */
+    left: 0;
+    top: 0;
+}
+
+.menu ul {
+    list-style-type: none; /* Corrigido de 'nome' para 'none' */
+    padding: 0;
+}
+
+.menu ul li a {
+    text-decoration: none; /* Corrigido de 'nome' para 'none' */
+    color: white;
+    display: block;
+    padding: 10px 0;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu ul li a:hover {
+    color: #953bbe; 
+}
+
+/* 3. ÁREA DE CONTEÚDO BRANCO (CORRIGIDO) */
+/* No seu HTML está <div class="content">, ajustei para a classe correta */
+.content { 
+    flex: 1; 
+    padding: 40px; 
+    margin-left: 200px; /* Cria o espaço para o conteúdo não sumir atrás do menu */
+    max-width: 900px;
+}
+
+/* 4. ESTILIZAÇÃO DOS TEXTOS E COMPONENTES */
+h1 { 
+    color: #2c3e50; 
+    margin-bottom: 20px; 
+    border-bottom: 3px solid #280eb8; 
+    padding-bottom: 10px; 
+}
+
+h2 { 
+    color: #1a25bc; 
+    margin: 20px 0 10px 0; 
+}
+
+p { 
+    line-height: 1.6; 
+    margin-bottom: 15px; 
+    text-align: justify; 
+}
+
+ul { 
+    margin-left: 20px; 
+    margin-bottom: 15px; 
+    line-height: 1.6; 
+}
+
+.box { 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+    margin-bottom: 20px; 
+}
+
+.cv-item { 
+    background: #fff; 
+    padding: 15px; 
+    border-left: 4px solid #151f80; 
+    margin-bottom: 15px; 
+    border-radius: 0 8px 8px 0; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+}

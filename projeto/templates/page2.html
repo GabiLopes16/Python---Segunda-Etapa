@@ -1,0 +1,30 @@
+<!--Esse template herda no extends o layout.html
+ELe tem estruturas básicas de layout-->
+
+{% extends 'layout.html' %}
+
+{% block title %}
+Informações Profissionais
+{% endblock %}
+
+{% block content %}
+<h1>Minha Trajetória Profissional</h1>
+
+<div class="box">
+    <h2>Resumo Profissional</h2>
+    <p>Atualmente estou focando meus estudos na área de Tecnologia da Informação, aprendendo linguagens como Python e frameworks web como o Flask. Busco desenvolver projetos práticos para consolidar meu conhecimento e me preparar para o mercado de trabalho.</p>
+</div>
+
+<h2>Experiências e Projetos</h2>
+<div class="cv-item">
+    <h3>Estudante de TI / Desenvolvedor em Formação</h3>
+    <p style="color: #7f8c8d; font-weight: bold; font-size: 14px;">Projetos Pessoais | 2026 - Atual</p>
+    <p>Construção de aplicações web responsivas utilizando HTML5, CSS3 e integração com back-end em Python utilizando Flask para gerenciamento de rotas e templates dinâmicos.</p>
+</div>
+
+<h2>Formação Acadêmica</h2>
+<div class="cv-item">
+    <h3>Curso Técnico / Superior em Tecnologia da Informação</h3>
+    <p style="color: #7f8c8d; font-weight: bold; font-size: 14px;">Instituição de Ensino Cotemig| Conclusão Prevista: 2027</p>
+</div>
+{% endblock %}
