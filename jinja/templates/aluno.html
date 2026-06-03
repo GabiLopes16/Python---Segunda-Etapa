@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Atividade Jinja
+{% endblock %}
+
+{% block content %}
+<h2>Atividade Jinja</h2>
+<hr>
+
+<p><strong></strong> Olá, {{ nome }}</p>
+<hr>
+
+
+<p><strong>Nome:</strong>  {{ nome }} - Idade: {{ idade }} anos</p>
+<hr>
+
+<p><strong>Usuário:</strong>  {{ usuario.nome }} ({{ usuario.email }})</p>
+<hr>
+
+<h3>Lista de alunos</h3>
+<ul>
+    {% for aluno in alunos %}
+    <li>
+        {{ aluno.nome }} - nota: {{ aluno.nota }} 
+        - 
+        {% if aluno.nota >= 7 %}
+            <span style="color: green;">Aprovado</span>
+        {% else %}
+            <span style="color: red;">Reprovado</span>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+
